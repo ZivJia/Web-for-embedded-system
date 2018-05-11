@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<title>WeaS</title>
+<link rel="shortcut icon" href="icon.ico" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+.formpadding {padding:6px;}
+h3 {padding:0px;}
+p {font-size:20px; text-indent: 27px}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top w3-black">
+  <div class="w3-bar w3-hover-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#parts" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PARTS</a>
+    <a href="#video" class="w3-bar-item w3-button w3-padding-large w3-hide-small">VIDEO</a>
+    <a href="#implement" class="w3-bar-item w3-button w3-padding-large w3-hide-small">IMPLEMENT</a>
+    <a href="#diagrams" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DIAGRAM</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#parts" class="w3-bar-item w3-button w3-padding-large">parts</a>
+  <a href="#video" class="w3-bar-item w3-button w3-padding-large">video</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="demo" style="height:400px">
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="arduino.jpg" style="height:400px">
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="feather.jpg" style="height:400px">
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="sensor.jpg" style="height:400px">
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="ssd1306.jpg" style="height:400px">
+  </div>
+  <!-- The intro Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
+    <h2 class="w3-wide" style="font-size:45px"><b>WeaS</b></h2>
+    <p class="w3-justify">Weas stands for weather & security for our user's concern, which takes up a little space beside the door but can offer meaningful functions for your life.
+    </p>
+    <p class="w3-justify">People likely tend to forget to check about weather conditions for the day and thus can lead to embarrassments like stuck in the rain and dress less warm than needed. The thing is we don't have the habit to check weather forecast deliberately, but what we do is putting on sneakers, boots or leather shoes by the door when we heading out. We want to utilize the several seconds we spent on the shoes to inform our user about today's weather condition. The obvious red LED light on the weather forecast indicates today is or will be raining/snowing which could suggest our user check the LCD screen for more detailed info about today's weather. If the weather gonna be great today the peaceful green LED light will replace the red light.
+    </p>
+    <p class="w3-justify">Sometimes when we are out of the house, we would probably worry about our possession's safety. Our WeaS house guardian function will take care of the security concern for you. There are two modes for the house guardian, safe mode & security mode. In the security mode, if someone wants to break into the room without your permission, WeaS will detect that person, trigger the alarm and inform you via text messages. You can switch these two modes using the select buttons we provide you. What if we forget to set security mode when we leave the house? We can always set the mode using text messages and if setting successful you will get a confirmation text message from WeaS. One thing to notice: if the alarm has been triggered, these select buttons will be disabled so the alarm won't stop until you text WeaS.
+    </p>
+    <p class="w3-center w3-opacity" style="font-size:32px; text-indent:0px">
+        <b>Get a WeaS by the door&ensp; Get an easier life. </b>
+      </p>
+  </div>
+  <hr />
+  <!-- The parts Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="parts">
+    <h2 class="w3-wide">&ensp;&nbsp;Elements</h2>
+    <div class="w3-row w3-padding-16">
+      <div class="w3-third">
+        <p class="w3-black w3-padding-16">Name</p>
+        <p >Arduino</p>
+        <p class="w3-grey formpadding">Feather Huzzah</p>
+        <p >Distance Sensor</p>
+        <p class="w3-grey formpadding">SIM Card Reader</p>
+        <p >Level Converter</p>
+        <p class="w3-grey formpadding">LCD Display</p>
+        <p >RTC</p>
+        <p class="w3-grey formpadding">Lithium Battery</p>
+      </div>
+      <div class="w3-third">
+        <p class="w3-black w3-padding-16">Model</p>
+        <p >Arduino Uno Tool Kit</p>
+        <p class="w3-grey formpadding">ESP8266</p>
+        <p >HC-SR04</p>
+        <p class="w3-grey formpadding">SIM900</p>
+        <p >CYT1070</p>
+        <p class="w3-grey formpadding">SSD1306</p>
+        <p >DS1307</p>
+        <p class="w3-grey formpadding">503450 1000mA</p>
+      </div>
+      <div class="w3-third">
+        <p class="w3-black w3-padding-16">Price</p>
+        <p >$70</p>
+        <p class="w3-grey formpadding">$17</p>
+        <p >$2</p>
+        <p class="w3-grey formpadding">$30</p>
+        <p >$1</p>
+        <p class="w3-grey formpadding">$10</p>
+        <p >$5</p>
+        <p class="w3-grey formpadding">$9</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- The video Section -->
+  <div class="w3-black" id="video" style="height: 200px">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">&ensp; Demo</h2>
+      <p class="w3-opacity w3-center"><i>Give us a thumbs up</i></p><br>
+    </div>
+  </div>
+  <div class="w3-black w3-center" id="video" style="height:700px">
+  <iframe frameborder="0" height="100%" width="700px"
+    src="https://www.youtube.com/embed/YmazMD2DoOQ?list=RDgfwMBzGA_Jo">
+  </iframe>
+  </div>
+
+  <!-- The implement Section -->
+  <div id="implement">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Weather Forcast Implementation</h2>
+      <p class="w3-left">The weather forecast mode requires a very small portion of hardware and the main idea behind this part is people don't usually check the weather on their phones before leaving home and this could make one come back home again to fetch an umbrella or even stuck in a rain etc. If we can utilize the IoT device to retrieve weather info and display them to our user just beside the door, then once our user heads out, he/she cannot miss the essential weather information and can avoid so many embarrassing situations due to the neglect of weather information.
+      </p>
+      <p class="w3-left">The general working way can be described as follows: we receive weather information from the internet. This information shall be updated every hour and can be view by users. If the weather forecast indicates bad weather in the upcoming day/night, the red warning light will lit up and on the contrast, the green 'safe' light will list up. What we will show to our users are current weather, current temperature, daylight forecast and nightlight forecast. Since we have so much information to display and the LCD is quite small due to funding constraint, we use a button to choose what content to display on the LCD and use LED lights to indicate the user if he/she should check more detailed info by pushing the button (will be referred as the select button).
+      </p>
+      <p class="w3-left">In order to interact with the internet, we need a WiFi mode which embedded in our microcontroller. The Adafruit feather HUZZAH board served the purpose very well. We can easily use the board to make HTTP request which is exactly what we need. We found a weather information API called Accurate Weather, that allows us to make 50 free HTTP request per day. Get HTTP request will make the API respond to our request. After we extract useful info from the API respond by processing the string, we should then display it on the LCD screen. And if the weather info indicates there is/will be a rain or snow today, we will lit the red light warning users to check more by pushing the select button. To enable the select button, we use the rising outer interruption caused by the level rising when users push the button. Once we receive the button push signal, the display should change to the next state.
+      </p>
+    </div>
+  </div>
+
+  <div class="w3-black">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">House Guardian Implementation</h2>
+      <p class="w3-left">In this part, we first need Arduino to control the whole process and watch over the interrupts and then we also need SIM900 which uses AT commands to communicate our user’s phone. There are two modes: safe mode and security mode. We could use either button in the product or user’s phone to switch mode but if in the security mode, someone breaks in then only the user’s phone could disable the alarm and switch it to safe mode.
+      </p>
+      <p class="w3-left">In safe mode, we would show the real-time (real-time would update per minute) in the LCD screen, the green LED would light up and we enable the safe mode button and disable the security mode button. In security mode, we would also show the real time in the LCD screen, the red LED would light up and we enable the security mode button and disable the safe mode button and the distance sensor would enable to detect whether someone breaks in.
+      </p>
+      <p class="w3-left" style="text-indent:0">And we could separate the total progress into several states.<br /><span style="color:#fcd3c9">I.</span> Initialization state: In this state, we initialize the button interrupts RTC LCD and register the online status for SIM900 to connect with the net. <br> <br /><span style="color:#b6ffd0">II.</span> Safe Mode state: In this state, we would show the real time in the LCD screen, the green LED would light up and we enable the safe mode button and disable the security mode button. In this mode, we could either press the security button or use user’s phone to send “securitymode” message to switch the mode to security mode.<br> <br /><span style="color:#acdafe">III.</span> Security Mode state: In this state, we would also show the real time in the LCD screen, the red LED would light up and we enable the security mode button and disable the safe mode button and the distance sensor would enable to detect whether someone breaks in. In this mode, we could either press the safe button or use user’s phone to send “safemode” message to switch the mode to security mode. If someone breaks in, then our product would send a message to the user,” warning someone breaks in!!!”, the beeper would alarm and the red LED would flash per half second and in this situation, we would disable the safe mode button in the circuit and only the user’s phone switch the mode to safe mode by sending the “safemode” message.
+      </p>
+    </div>
+  </div>
+
+  <!-- The diagrams Section -->
+  <div class="w3-white" id="diagrams">
+    <div class="w3-display-container w3-center w3-padding-64">
+      <h2 style="font-weight: bold;" class="w3-center w3-wide">Weather Forecast Module Circuit Diagram</h2>
+      <img src="weather diagram.png" style="width:700px">
+    </div>
+  </div>
+  <hr>
+  <div class="w3-white">
+    <div class="w3-display-container w3-center w3-padding-32">
+      <h2 style="font-weight:bold;" class="w3-center w3-wide">House Guardian Module Circuit Diagram</h2>
+      <img src="house diagram.png" style="width:900px">
+    </div>
+  </div>
+  <br /><br /><br />
+  <hr class="w3-black" style="height:100px;">
+
+
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">&ensp;&nbsp;CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Contact us if want to know more</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-user-circle-o" style="width:30px"></i>Zhiyuan Jia<br>
+        <i class="fa fa-map-marker" style="width:30px"></i> NYC, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone:(646) 3221195<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: zj74@cornell.edu<br>
+      </div>
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-user-circle-o" style="width:30px"></i>Shichao Feng<br>
+        <i class="fa fa-map-marker" style="width:30px"></i> NYC, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone:(646) 5103398<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email:sf549@cornell.edu<br>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Page Content -->
+
+<!-- Footer -->
+
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000);
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
